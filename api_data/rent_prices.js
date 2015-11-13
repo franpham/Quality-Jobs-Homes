@@ -224,66 +224,22 @@ var topics = [
 [
 "2011-01-31",
 1800
-],
-[
-"2010-12-31",
-1800
-],
-[
-"2010-11-30",
-1800
-],
-[
-"2010-10-31",
-1795
-],
-[
-"2010-09-30",
-1800
-],
-[
-"2010-08-31",
-1900
-],
-[
-"2010-07-31",
-1850
-],
-[
-"2010-06-30",
-1800
-],
-[
-"2010-05-31",
-1799
-],
-[
-"2010-04-30",
-1800
-],
-[
-"2010-03-31",
-1800
-],
-[
-"2010-02-28",
-1800
 ]
 ];
 
+// NEED TO SET LIMIT TO SAME AS home_data.js
 var url = 'http://www.quandl.com/api/v3/datasets/ZILL/C00033_RMP.json?limit=60';
 
-var prices = [];
+var priceObj = {};    // for use with DB;
+var prices = [];      // for listing values;
 for (var i = 0; i < topics.length; i++) {
   var num = topics[i][0].substring(0, 7);
-  prices[i] = { name: num, val: topics[i][1] };
+  var val = topics[i][1];
+  prices[i] = { name: num, val: val };
+  priceObj[num] = val;
 }
-var formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
 
-for (var i = 0; i < prices.length; i++) {
-  prices[i].val = formatter.format(prices[i].val);
-}
-module.exports = prices;
+module.exports = priceObj;
 
 // http://www.quandl.com/api/v3/datasets/ZILL/C00033_RMP.json?limit=60
 // C00033 = city code for Miami, _RMP = median rent; https IS PREFERRED OVER http;

@@ -2,10 +2,6 @@
 
 var topics = [
 [
-"2015-09-30",
-6090
-],
-[
 "2015-08-31",
 6525
 ],
@@ -228,66 +224,22 @@ var topics = [
 [
 "2011-01-31",
 3970
-],
-[
-"2010-12-31",
-2986
-],
-[
-"2010-11-30",
-1723
-],
-[
-"2010-10-31",
-1918
-],
-[
-"2010-09-30",
-1889
-],
-[
-"2010-08-31",
-1291
-],
-[
-"2010-07-31",
-1763
-],
-[
-"2010-06-30",
-1787
-],
-[
-"2010-05-31",
-2189
-],
-[
-"2010-04-30",
-2095
-],
-[
-"2010-03-31",
-2016
-],
-[
-"2010-02-28",
-1557
 ]
 ];
 
+// NEED TO SET LIMIT TO SAME AS home_data.js
 var url = 'http://www.quandl.com/api/v3/datasets/ZILL/C00033_HR.json?limit=60';
 
-var counts = [];
+var counterObj = {};    // for use with DB;
+var counters = [];      // for listing values;
 for (var i = 0; i < topics.length; i++) {
   var num = topics[i][0].substring(0, 7);
-  counts[i] = { name: num, val: topics[i][1] };
+  var val = topics[i][1];
+  counters[i] = { name: num, val: val };
+  counterObj[num] = val;
 }
-var formatter = new Intl.NumberFormat('en-US');
 
-for (var i = 0; i < counts.length; i++) {
-  counts[i].val = formatter.format(counts[i].val);
-}
-module.exports = counts;
+module.exports = counterObj;
 
 // http://www.quandl.com/api/v3/datasets/ZILL/C00033_HR.json?limit=60
 // C00033 = city code for Miami, _HR = # of homes rented; https IS PREFERRED OVER http;

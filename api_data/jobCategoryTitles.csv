@@ -1,0 +1,525 @@
+jobCategory,jobtitle,salary
+Accounting / Finance,Accountant,58000
+Accounting / Finance,Director Of Finance,92000
+Accounting / Finance,Office Manager Bookkeeper,54000
+Accounting / Finance,Accounting Assistant,38000
+Accounting / Finance,Finance Manager,66000
+Accounting / Finance,Quantitative Analyst,77000
+Accounting / Finance,Accounting Clerk,26000
+Accounting / Finance,Financial Advisor,79000
+Accounting / Finance,Quantitative Research Analyst,77000
+Accounting / Finance,Accounting Manager,"60,000"
+Accounting / Finance,Financial Analyst,73000
+Accounting / Finance,Senior Accountant,71000
+Accounting / Finance,Assistant Controller,74000
+Accounting / Finance,Financial Associate,48000
+Accounting / Finance,Tax Accountant,61000
+Accounting / Finance,Billing Specialist,26000
+Accounting / Finance,Financial Reporting Manager,82000
+Accounting / Finance,Tax Manager,77000
+Accounting / Finance,Bookkeeper,34000
+Accounting / Finance,Full Charge Bookkeeper,39000
+Accounting / Finance,Treasury Analyst,73000
+Accounting / Finance,Budget Analyst,69000
+Accounting / Finance,General Ledger Accountant,55000
+Accounting / Finance,VP Director of Finance,102000
+Accounting / Finance,CNA,24000
+Accounting / Finance,Internal Auditor,74000
+Accounting / Finance,VP of Finance,97000
+Accounting / Finance,Controller,77000
+Accounting / Finance,Night Auditor,19000
+Administrative,Accounts Payable Clerk,29000
+Administrative,Executive Assistant,41000
+Administrative,Program Coordinator,43000
+Administrative,Accounts Receivable Clerk,29000
+Administrative,Executive Director,85000
+Administrative,Program Manager,57000
+Administrative,Administrative Assistant,29000
+Administrative,File Clerk,20000
+Administrative,Project Coordinator,41000
+Administrative,Assistant Manager,41000
+Administrative,Medical Records Clerk,22000
+Administrative,Project Manager,89000
+Administrative,Branch Manager,36000
+Administrative,Office Assistant,26000
+Administrative,Purchasing Agent,46000
+Administrative,Clerk,22000
+Administrative,Office Clerk,24000
+Administrative,Purchasing Manager,82000
+Administrative,Data Entry Operator,23000
+Administrative,Office Manager,51000
+Administrative,Receptionist,22000
+Administrative,Director of Operations,80000
+Administrative,Operations Manager,61000
+Administrative,Receptionist Administrative Assistant,32000
+Administrative,District Manager,56000
+Administrative,Personal Assistant,31000
+Administrative,Secretary,27000
+Administrative,Executive Administrative Assistant,40000
+Administrative,Product Manager,48000
+Administrative,Territory Manage,71000
+Arts / Publishing,Art Director,70000
+Arts / Publishing,Graphics Designer,52000
+Arts / Publishing,Unigraphics Designer,68000
+Arts / Publishing,Assistant Editor,38000
+Arts / Publishing,Graphics Designer Production Artist,51000
+Arts / Publishing,User Interface Designer,92000
+Arts / Publishing,Designer,61000
+Arts / Publishing,Illustrator,66000
+Arts / Publishing,Video Editor,51000
+Arts / Publishing,Editor,51000
+Arts / Publishing,Journalist,49000
+Arts / Publishing,Writer,61000
+Arts / Publishing,Editorial Assistant,39000
+Arts / Publishing,News Producer,61000
+Arts / Publishing,Writer Editor,50000
+Arts / Publishing,Graphic Artist,47000
+Arts / Publishing,News Reporter,36000
+Arts / Publishing,Zoo Keeper,29000
+Arts / Publishing,Graphic Web Designer,52000
+Arts / Publishing,Photographer,19000
+Banking / Loans,Analyst,59000
+Banking / Loans,Investment Analyst,92000
+Banking / Loans,Underwriter,23000
+Banking / Loans,Bank Teller,23000
+Banking / Loans,Loan Consultant,102000
+Banking / Loans,Underwriter Trainee,44000
+Banking / Loans,Banker,74000
+Banking / Loans,Loan Officer,73000
+Banking / Loans,Underwriting Assistant,31000
+Banking / Loans,Credit Analyst,61000
+Banking / Loans,Loan Processor,35000
+Banking / Loans,Universal Banker,102000
+Banking / Loans,Escrow Assistant,35000
+Banking / Loans,Mortgage Loan Officer,92000
+Banking / Loans,In Store Banker,32000
+Banking / Loans,Teller,21000
+Construction / Facilities,Carpenter,36000
+Construction / Facilities,Groundskeeper,22000
+Construction / Facilities,Laborer,23000
+Construction / Facilities,Construction Manager,64000
+Construction / Facilities,HVAC Technician,41000
+Construction / Facilities,Maintenance Manager,48000
+Construction / Facilities,Construction Superintendent,65000
+Construction / Facilities,Heavy Equipment Operator,28000
+Construction / Facilities,Maintenance Mechanic,38000
+Construction / Facilities,Construction Worker,38000
+Construction / Facilities,Industrial Designer,82000
+Construction / Facilities,Maintenance Supervisor,39000
+Construction / Facilities,Custodian,23000
+Construction / Facilities,Industrial Electrician,45000
+Construction / Facilities,Maintenance Technician,34000
+Construction / Facilities,Electrician,44000
+Construction / Facilities,Installer,
+Construction / Facilities,Maintenance Worker,38000
+Construction / Facilities,Equipment Operator,40000
+Construction / Facilities,Interior Designer,24000
+Construction / Facilities,Painter,35000
+Construction / Facilities,Estimator,65000
+Construction / Facilities,Janitor,20000
+Construction / Facilities,Plant Manager,82000
+Construction / Facilities,Facilities Manager,46000
+Construction / Facilities,Journeyman Electrician,47000
+Construction / Facilities,Welder,31000
+Construction / Facilities,General Maintenance Technician,39000
+Construction / Facilities,Journeyman Lineman,71000
+Construction / Facilities,Welder Fabricator,31000
+Customer Service,Branch Customer Service Representative,24000
+Customer Service,Field Service Representative,35000
+Customer Service,Lot Attendent,19000
+Customer Service,Customer Service Advisor,41000
+Customer Service,Field Service Technician,31000
+Customer Service,Relationship Manager,50000
+Customer Service,Customer Service Associate,26000
+Customer Service,Field Technician,27000
+Customer Service,Retail Customer Support Representative,65000
+Customer Service,Customer Service Manager,45000
+Customer Service,Flight Attendant,36000
+Customer Service,Sales Engineer,82000
+Customer Service,Customer Service Representative,44000
+Customer Service,Game Manager,56000
+Customer Service,Service Manager,45000
+Customer Service,Desktop Support,45000
+Customer Service,General Service Technician,37000
+Customer Service,Service Technician,31000
+Customer Service,Desktop Support Technician,39000
+Customer Service,Help Desk Analyst,36000
+Customer Service,Universal Service Representative,102000
+Customer Service,Emergency Road Service Counselor,38000
+Customer Service,Help Desk Specialist,41000
+Customer Service,Valet Attendant,17000
+Customer Service,Field Engineer,84000
+Customer Service,Help Desk Technical Support,45000
+Customer Service,Field Service Engineer,76000
+Customer Service,Help Desk Technician,38000
+Education / Training,Assistant Teacher,37000
+Education / Training,Kids Activity Assistant,28000
+Education / Training,Trainer,74000
+Education / Training,Counselor,43000
+Education / Training,Kindergarten Teacher,36000
+Education / Training,Training Coordinator,30000
+Education / Training,Enrollment Counselor,41000
+Education / Training,Korean Language Instructor,46000
+Education / Training,Training Manager,48000
+Education / Training,Guidance Counselor,46000
+Education / Training,Nanny,25000
+Education / Training,Training Specialist,33000
+Education / Training,Health Educator,61000
+Education / Training,Teacher,55000
+Education / Training,Yoga Instructor,21000
+Education / Training,Instructional Designer,63000
+Education / Training,Technical Trainer,61000
+Education / Training,Instructor,30000
+Education / Training,Technical Writer,61000
+Engineering / Architecture,Architect,102000
+Engineering / Architecture,GIS Analyst,60000
+Engineering / Architecture,Mechanical Design Engineer,83000
+Engineering / Architecture,Civil Engineer,79000
+Engineering / Architecture,GIS Specialist,49000
+Engineering / Architecture,Mechanical Engineer,81000
+Engineering / Architecture,Design Engineer,92000
+Engineering / Architecture,GIS Technician,38000
+Engineering / Architecture,Operations Research Analyst,81000
+Engineering / Architecture,Electrical Designer,71000
+Engineering / Architecture,General Engineer,84000
+Engineering / Architecture,Optical Engineer,76000
+Engineering / Architecture,Electrical Engineer,83000
+Engineering / Architecture,Geographer,61000
+Engineering / Architecture,Process Engineer,86000
+Engineering / Architecture,Electronics Engineer,84000
+Engineering / Architecture,Geologist,76000
+Engineering / Architecture,Project Engineer,88000
+Engineering / Architecture,Engineer,89000
+Engineering / Architecture,Geotechnical Engineer,79000
+Engineering / Architecture,Scientist,81000
+Engineering / Architecture,Engineering Manager,89000
+Engineering / Architecture,Hardware Design Engineer,94000
+Engineering / Architecture,Test Engineer,91000
+Engineering / Architecture,Engineering Technician,40000
+Engineering / Architecture,Hardware Engineer,92000
+Engineering / Architecture,Ultrasound Technician,22000
+Engineering / Architecture,Environmental Engineer,83000
+Engineering / Architecture,Industrial Engineer,81000
+Engineering / Architecture,VP Of Engineering,112000
+Government / Military,Environmental Scientist,62000
+Government / Military,Lifeguard,21000
+Government / Military,Zoning Manager,73000
+Government / Military,Federal Government Worker,48000
+Government / Military,USAR Unit Administrator,46000
+Government / Military,Zoning Specialist,66000
+Government / Military,Firefighter,30000
+Government / Military,Wildlife Biologist,56000
+Government / Military,Zoning Supervisor,57000
+Government / Military,Grant Writer,51000
+Government / Military,Zipsort Operator,22000
+Government / Military,Intelligence Analyst,76000
+Government / Military,Zoning Enforcement Inspector,53000
+Healthcare,Case Manager,51000
+Healthcare,Medical Worker,33000
+Healthcare,Phlebotomist,24000
+Healthcare,Dental Assistant,58000
+Healthcare,Nuclear Medicine Technologist,72000
+Healthcare,Physical Therapist,88000
+Healthcare,Dental Hygienist,51000
+Healthcare,Nurse,64000
+Healthcare,Physician Assistant,65000
+Healthcare,Director of Nursing,69000
+Healthcare,Nurse Assistant,63000
+Healthcare,Respiratory Therapist,64000
+Healthcare,Health Unit Coordinator,51000
+Healthcare,Nurse LVN,44000
+Healthcare,Social Worker,51000
+Healthcare,Home Health Aide,37000
+Healthcare,Nurse Practitioner,95000
+Healthcare,Unit Clerk,30000
+Healthcare,Massage Therapist,22000
+Healthcare,Nurse RN,66000
+Healthcare,Unit Secretary,54000
+Healthcare,Medical Assistant,38000
+Healthcare,Nursing Assistant,50000
+Healthcare,Veterinary Receptionist,28000
+Healthcare,Medical Receptionist,26000
+Healthcare,Nutritionist,49000
+Healthcare,Veterinary Technician,29000
+Healthcare,Medical Technologist,54000
+Healthcare,Occupational Therapist,86000
+Healthcare,Vocational Rehabilitation Counselor,44000
+Computer / Internet,Application Developer,94000
+Computer / Internet,IT Specialist,46000
+Computer / Internet,Software Engineer,94000
+Computer / Internet,Business Objects Developer,94000
+Computer / Internet,Informatica Developer,102000
+Computer / Internet,System Administrator,67000
+Computer / Internet,Business Systems Analyst,82000
+Computer / Internet,Java Developer,102000
+Computer / Internet,Systems Analyst,71000
+Computer / Internet,Data Analyst,61000
+Computer / Internet,NET Developer,88000
+Computer / Internet,Systems Engineer,92000
+Computer / Internet,Database Administrator,58000
+Computer / Internet,Network Administrator,66000
+Computer / Internet,Technical Support Engineer,88000
+Computer / Internet,Director Of Development,73000
+Computer / Internet,Network Engineer,92000
+Computer / Internet,Technical Support Specialist,39000
+Computer / Internet,Embedded Software Engineer,100000
+Computer / Internet,Network Technician,34000
+Computer / Internet,Unix System Administrator,92000
+Computer / Internet,IT Director,79000
+Computer / Internet,Oracle Database Administrator,94000
+Computer / Internet,Web Designer,66000
+Computer / Internet,IT Manager,70000
+Computer / Internet,Oracle Developer,97000
+Computer / Internet,Web Developer,87000
+Computer / Internet,IT Project Manager,91000
+Computer / Internet,Programmer Analyst,87000
+Computer / Internet,Webmaster,71000
+Hospitality / Entertainment,Banquet Manager,38000
+Hospitality / Entertainment,Greeter,19000
+Hospitality / Entertainment,Kennel Attendant,22000
+Hospitality / Entertainment,Event Manager,46000
+Hospitality / Entertainment,Guest Service Agent,22000
+Hospitality / Entertainment,Kennel Technician,27000
+Hospitality / Entertainment,Event Planner,50000
+Hospitality / Entertainment,Housekeeper,21000
+Hospitality / Entertainment,Travel Agent,56000
+Hospitality / Entertainment,Floral Designer,24000
+Hospitality / Entertainment,Kennel Assistant,21000
+Human Resources,Director Of Human Resources,44000
+Human Resources,HR Manager,44000
+Human Resources,Recruiting Coordinator,40000
+Human Resources,Executive Recruiter,71000
+Human Resources,HR Recruiter,45000
+Human Resources,Recruiting Manager,71000
+Human Resources,HR Administrator,44000
+Human Resources,HR Representative,30000
+Human Resources,Technical Recruiter,78000
+Human Resources,HR Consultant,69000
+Human Resources,HR Specialist,34000
+Human Resources,VP of Human Resources,82000
+Human Resources,HR Coordinator,35000
+Human Resources,Job Coach,42000
+Human Resources,HR Generalist,58000
+Human Resources,Recruiter,43000
+Insurance,Benefits Administrator,58000
+Insurance,Fraud Investigator,50000
+Insurance,Investigator,42000
+Insurance,Benefits Manager,48000
+Insurance,Inspector,27000
+Insurance,Lead Asset Protection Associate,102000
+Insurance,Benefits Specialist,40000
+Insurance,Insurance Agent,28000
+Insurance,Field Investigator,48000
+Insurance,Insurance Sales Representative,46000
+Law Enforcement / Security,Criminal Investigator,45000
+Law Enforcement / Security,Loss Prevention Investigator,34000
+Law Enforcement / Security,Security Officer,22000
+Law Enforcement / Security,International Police Officer,56000
+Law Enforcement / Security,Loss Prevention Manager,23000
+Law Enforcement / Security,Transportation Security Officer,22000
+Law Enforcement / Security,Juvenile Detention Officer,35000
+Law Enforcement / Security,Police Officer,28000
+Law Enforcement / Security,Unarmed Security Guard,22000
+Law Enforcement / Security,Juvenile Probation Officer,42000
+Law Enforcement / Security,Security Guard,22000
+Legal / Paralegal,Attorney,49000
+Legal / Paralegal,Legal / Paralegal Administrative Assistant,28000
+Legal / Paralegal,Litigation Attorney,27000
+Legal / Paralegal,General Counsel,49000
+Legal / Paralegal,Legal / Paralegal Assistant,23000
+Legal / Paralegal,Litigation Paralegal,38000
+Legal / Paralegal,Judge Advocate,65000
+Legal / Paralegal,Legal / Paralegal Secretary,23000
+Legal / Paralegal,Paralegal,23000
+Manufacturing / Mechanical,Assembler,23000
+Manufacturing / Mechanical,Manufacturing Engineer,78000
+Manufacturing / Mechanical,QA Tester,79000
+Manufacturing / Mechanical,Autocad Drafter,43000
+Manufacturing / Mechanical,Material Handler,21000
+Manufacturing / Mechanical,Quality Control Inspector,23000
+Manufacturing / Mechanical,Automotive Technician,35000
+Manufacturing / Mechanical,Operator,37000
+Manufacturing / Mechanical,Quality Engineer,85000
+Manufacturing / Mechanical,CNC Machinist,37000
+Manufacturing / Mechanical,Production Assistant,25000
+Manufacturing / Mechanical,Research Analyst,68000
+Manufacturing / Mechanical,Chemist,61000
+Manufacturing / Mechanical,Production Manager,71000
+Manufacturing / Mechanical,Research Assistant,33000
+Manufacturing / Mechanical,Drafter,28000
+Manufacturing / Mechanical,Production Supervisor,42000
+Manufacturing / Mechanical,Research Associate,47000
+Manufacturing / Mechanical,Electronic Assembler,24000
+Manufacturing / Mechanical,Production Worker,22000
+Manufacturing / Mechanical,Research Scientist,82000
+Manufacturing / Mechanical,Electronics Technician,26000
+Manufacturing / Mechanical,QA Analyst,83000
+Manufacturing / Mechanical,Safety Manager,39000
+Manufacturing / Mechanical,Machine Operator,24000
+Manufacturing / Mechanical,QA Engineer,92000
+Manufacturing / Mechanical,Technician,30000
+Manufacturing / Mechanical,Machinist,37000
+Manufacturing / Mechanical,QA Specialist,69000
+Manufacturing / Mechanical,Test Technician,32000
+Marketing / Advertising,Brand Manager,66000
+Marketing / Advertising,Marketing Assistant,48000
+Marketing / Advertising,Online Marketing Manager,71000
+Marketing / Advertising,Copywriter,57000
+Marketing / Advertising,Marketing Associate,45000
+Marketing / Advertising,Product Marketing Manager,79000
+Marketing / Advertising,Director Of Communication,62000
+Marketing / Advertising,Marketing Coordinator,41000
+Marketing / Advertising,Public Relations Manager,64000
+Marketing / Advertising,Director Of Marketing,74000
+Marketing / Advertising,Marketing Manager,66000
+Marketing / Advertising,VP of Marketing,102000
+Marketing / Advertising,Market Research Analyst,70000
+Marketing / Advertising,Marketing Specialist,49000
+Non-Profit / Volunteering,Community Volunteer,35000
+Non-Profit / Volunteering,Youth Care Specialist,39000
+Non-Profit / Volunteering,Youth Leader,33000
+Non-Profit / Volunteering,Red Cross,39000
+Non-Profit / Volunteering,Youth Care Worker,31000
+Non-Profit / Volunteering,Youth Program Coordinator,32000
+Non-Profit / Volunteering,Special Events Coordinator,38000
+Non-Profit / Volunteering,Youth Coordinator,33000
+Non-Profit / Volunteering,Youth Program Director,37000
+Non-Profit / Volunteering,Volunteer Coordinator,35000
+Non-Profit / Volunteering,Youth Counselor,29000
+Non-Profit / Volunteering,Youth Specialist,37000
+Non-Profit / Volunteering,Volunteer Recruiter,35000
+Non-Profit / Volunteering,Youth Development Manager,43000
+Non-Profit / Volunteering,Youth Worker,32000
+Non-Profit / Volunteering,Youth Advocate,32000
+Non-Profit / Volunteering,Youth Development Specialist,41000
+Pharmaceutical / Bio-tech,Analytical Chemist,51000
+Pharmaceutical / Bio-tech,Lab Technician,38000
+Pharmaceutical / Bio-tech,Pharmacist,39000
+Pharmaceutical / Bio-tech,Lab Assistant,27000
+Pharmaceutical / Bio-tech,Pharmaceutical Sales Representative,64000
+Pharmaceutical / Bio-tech,Pharmacy Technician,28000
+Real Estate,Assistant Property Manager,51000
+Real Estate,Leasing Agent,17000
+Real Estate,Real Estate Appraiser,51000
+Real Estate,Land Surveyor,59000
+Real Estate,Leasing Consultant,35000
+Real Estate,Lease Administrator,51000
+Real Estate,Property Manager,47000
+Restaurant / Food Service,Baker,80000
+Restaurant / Food Service,Kitchen Bath Department Supervisor,38000
+Restaurant / Food Service,Line Cook,19000
+Restaurant / Food Service,Bartender,22000
+Restaurant / Food Service,Kitchen Designer,102000
+Restaurant / Food Service,Restaurant Bartender,22000
+Restaurant / Food Service,Cook,21000
+Restaurant / Food Service,Kitchen Helper,19000
+Restaurant / Food Service,Restaurant Manager,41000
+Restaurant / Food Service,Dishwasher,20000
+Restaurant / Food Service,Kitchen Manager,44000
+Restaurant / Food Service,Restaurant Worker,21000
+Restaurant / Food Service,Executive Chef,49000
+Restaurant / Food Service,Kitchen Staff,21000
+Restaurant / Food Service,Sous Chef,46000
+Restaurant / Food Service,Food Service Worker,20000
+Restaurant / Food Service,Kitchen Steward,18000
+Restaurant / Food Service,Wait Staff,21000
+Restaurant / Food Service,Grill Cook,18000
+Restaurant / Food Service,Kitchen Supervisor,20000
+Restaurant / Food Service,Kitchen Assistant,41000
+Restaurant / Food Service,Kitchen Worker,20000
+Retail,Assistant Store Manager,58000
+Retail,Hair Stylist,19000
+Retail,Retail Sales Representative,48000
+Retail,Buyer,36000
+Retail,Head Cashier,25000
+Retail,Retail Store Manager,46000
+Retail,Buyer Planner,54000
+Retail,Jeweler,38000
+Retail,Sales Assistant,41000
+Retail,Cashier,20000
+Retail,Key Holder,82000
+Retail,Store Manager,45000
+Retail,Esthetician,40000
+Retail,Kitchen Bath Sales Associate,108000
+Retail,Visual Merchandiser,24000
+Retail,Footwear Associate,27000
+Retail,Night Manager,46000
+Retail,Youth Department Sales Manager,31000
+Retail,Garden Sales Associate,38000
+Retail,Representative Retail Sales,48000
+Retail,Grooming Salon Manager,36000
+Retail,Retail Sales Associate,41000
+Sales,Account Executive,64000
+Sales,Key Account Manager,74000
+Sales,Sales Coordinator,36000
+Sales,Account Manager,58000
+Sales,Merchandiser,20000
+Sales,Sales Executive,61000
+Sales,Account Representative,37000
+Sales,National Account Manager,61000
+Sales,Sales Manager,48000
+Sales,Business Development Manager,82000
+Sales,National Sales Manager,61000
+Sales,Sales Representative,45000
+Sales,Business Development Specialist,75000
+Sales,Outside Sales Representative,56000
+Sales,Sales Specialist,51000
+Sales,Director Of Business Development,96000
+Sales,Regional Sales Manager,81000
+Sales,Telemarketer,36000
+Sales,Director Of Sales,76000
+Sales,Retail Merchandiser,20000
+Sales,Territory Sales Manager,73000
+Sales,District Sales Manager,57000
+Sales,Route Sales Representative,46000
+Sales,Trader,58000
+Sales,Field Representative,28000
+Sales,Sales Associate,27000
+Sales,VP of Sales,102000
+Sales,Inside Sales Representative,45000
+Sales,Sales Consultant,48000
+Sales,Work Sales Representative,45000
+Telecommunications,Broadband Technician,33000
+Telecommunications,Telecommunications Specialist,80000
+Telecommunications,Wireless Consultant,48000
+Telecommunications,Communications Specialist,38000
+Telecommunications,Telecommunications Technician,27000
+Transportation / Logistics,Bus Driver,30000
+Transportation / Logistics,Logistics Coordinator,37000
+Transportation / Logistics,Van Driver,74000
+Transportation / Logistics,Delivery Driver,51000
+Transportation / Logistics,Logistics Manager,61000
+Transportation / Logistics,Warehouse Assistant,23000
+Transportation / Logistics,Diesel Mechanic,39000
+Transportation / Logistics,Nationwide Truck Driver,64000
+Transportation / Logistics,Warehouse Associate,21000
+Transportation / Logistics,Dispatcher,27000
+Transportation / Logistics,Order Builder,55000
+Transportation / Logistics,Warehouse Clerk,21000
+Transportation / Logistics,Driver,51000
+Transportation / Logistics,Receiving Associate,26000
+Transportation / Logistics,Warehouse Driver,24000
+Transportation / Logistics,Driver Merchandiser,23000
+Transportation / Logistics,Receiving Merchandise Pick Up Associate,21000
+Transportation / Logistics,Warehouse Lead,26000
+Transportation / Logistics,Forklift Operator,22000
+Transportation / Logistics,Route Driver,53000
+Transportation / Logistics,Warehouse Manager,25000
+Transportation / Logistics,Freight Team Associate,37000
+Transportation / Logistics,Shipping Clerk,22000
+Transportation / Logistics,Warehouse Specialist,28000
+Transportation / Logistics,Household Driver,101000
+Transportation / Logistics,Transportation Manager,48000
+Transportation / Logistics,Warehouse Supervisor,22000
+Transportation / Logistics,Logistics Analyst,71000
+Transportation / Logistics,Truck Driver,51000
+Transportation / Logistics,Warehouse Worker,20000
+Upper Management / Consulting,Business Analyst,76000
+Upper Management / Consulting,Business Process Analyst,82000
+Upper Management / Consulting,General Manager,48000
+Upper Management / Consulting,Business Manager,48000
+Upper Management / Consulting,Chief Financial Officer,99000
+Upper Management / Consulting,Manager,48000
+Upper Management / Consulting,Business Office Manager,61000
+Upper Management / Consulting,Director,62000
+Upper Management / Consulting,VP,102000

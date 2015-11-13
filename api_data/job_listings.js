@@ -541,33 +541,40 @@ var json = {
 "pageNumber": 0,
 "results" : ['list above']
 };
-var nextJobQuery = json.end;   // do not increment since start = 1;
-var comma = json.location.indexOf(',');
-var city  = json.location.substring(0, comma);
-var state = json.location.substring(comma + 1);
-var year = (new Date()).getFullYear();
-var jobCounts = json.totalResults;
+
+require('./week_utils');
+var nextJobQuery = json.end;          // do not increment since start = 1;
+var jobCounts = json.totalResults;    // for job_stats;
+var week = (new Date()).getWeek();
+var year = (new Date()).getWeekYear();
+var CATEGORY = 'Computer / Internet';
+var CITYCODE = '00033';  // for Miami;
 
 var jobs = [];
 for(var i = 0; i < topics.length; i++) {
-  var data = [
-    { name : 'jobtitle', val : topics[i].jobtitle },
-    { name : 'company', val : topics[i].company },
-    { name : 'date', val : topics[i].date },
-    { name : 'snippet', val : topics[i].snippet },
-    { name : 'url', val : topics[i].url },
-    { name : 'city', val : city },
-    { name : 'state', val : topics[i].state },
-    { name : 'latitude', val : topics[i].latitude },
-    { name : 'longitude', val : topics[i].longitude }
-  ];
+  var data = { week: year + '-' + week, city: CITYCODE, category: CATEGORY, jobtitle: topics[i].jobtitle, company: topics[i].company,
+               url: topics[i].url, date: topics[i].date, snippet: topics[i].snippet, lat: topics[i].latitude, lng: topics[i].longitude };
   jobs[i] = data;
+
+  // var data = [                 // for testing;
+  //   { name : 'week', val : year + '-' + week },
+  //   { name : 'city', val : CITYCODE },
+  //   { name : 'category', val : CATEGORY },
+  //   { name : 'jobtitle', val : topics[i].jobtitle },
+  //   { name : 'company', val : topics[i].company },
+  //   { name : 'url', val : topics[i].url },
+  //   { name : 'date', val : topics[i].date },
+  //   { name : 'snippet', val : topics[i].snippet },
+  //   { name : 'lat', val : topics[i].latitude },
+  //   { name : 'long', val : topics[i].longitude }
+  // ];
 }
 
 module.exports = jobs;
 
-// jobs document schema: jobtitle, company, url, date, snippet, city, state, latitude, longitude
-// job_stats document schema: city: city, state: state, jobType :{ month : [jobCounts, medianSalary, loc_quotient-density ]} FOR 27 JOB TYPES;
+// jobs_list schema (10 fields): week, city, category, jobtitle, company, url, date, snippet, latitude, longitude
+// job_stats schema: month, city, category, jobCounts, medianSalary, loc_quotient (density);
 
-// http://api.indeed.com/ads/apisearch?publisher=1588917421720308&co=us&format=json&fromage=90&jt=fulltime&l=miami%2Cfl&latlong=1&limit=50&q=web+developer&radius=50&st=employer&useragent=&userip=0.0.0.0&v=2
+// initialize DB with 90 days of data; then search every again every Monday when week # changes;
+// http://api.indeed.com/ads/apisearch?publisher=1588917421720308&co=us&format=json&start=0&fromage=7&jt=fulltime&l=miami%2Cfl&latlong=1&limit=50&q=web+developer&radius=50&st=employer&useragent=&userip=0.0.0.0&v=2
 // set st=employer so map markers don't overlap and duplicates are not shown; "limit" of 25 is returned, so see "totalResults" field for total listings;
