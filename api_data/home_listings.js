@@ -2009,8 +2009,24 @@ for(var i = 0; i < topics.length; i++) {
     sales.push(data);     // MUST push since since indices are skipped;
   }
 }
-
 module.exports = sales;
 
 // https://api.simplyrets.com/properties?api_key=simplyrets&api_secret=simplyrets
 // NEED MLS && RETS CREDENTIALS TO GET FULL ACCESS;
+
+/*
+var jobs = [];    // for showing job listings;
+for(var i = 0; i < topics.length; i++) {
+  var data = [                 // for testing;
+    { name : 'week', val : year + '-' + week },
+    { name : 'city', val : CITYCODE },
+    { name : 'category', val : CATEGORY },
+    { name : 'jobtitle', val : topics[i].jobtitle },
+    { name : 'company', val : topics[i].company },
+    { name : 'url', val : topics[i].url },
+    { name : 'date', val : topics[i].date },
+    { name : 'snippet', val : topics[i].snippet },
+    { name : 'lat', val : topics[i].latitude },
+    { name : 'long', val : topics[i].longitude }
+  ];
+};  */

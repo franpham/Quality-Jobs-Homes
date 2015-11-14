@@ -1,6 +1,17 @@
 "use strict";
 
-var topics = [
+var json = {
+"version": 2,
+"query": "web developer",
+"location": "miami,fl",
+"dupefilter": true,
+"highlight": true,
+"radius": 50,
+"start": 1,
+"end": 25,
+"totalResults": 259,
+"pageNumber": 0,
+"results" : [
 {
 "jobtitle": "Junior Front-End Developer",
 "company": "LaunchCode",
@@ -526,53 +537,29 @@ var topics = [
 "formattedLocationFull": "Jupiter, FL 33477",
 "formattedRelativeTime": "12 days ago"
 }
-];
-
-var json = {
-"version": 2,
-"query": "web developer",
-"location": "miami,fl",
-"dupefilter": true,
-"highlight": true,
-"radius": 50,
-"start": 1,
-"end": 25,
-"totalResults": 259,
-"pageNumber": 0,
-"results" : ['list above']
+]
 };
 
 require('./week_utils');
+var topics = json.results;
 var nextJobQuery = json.end;          // do not increment since start = 1;
 var jobCounts = json.totalResults;    // for job_stats;
 var week = (new Date()).getWeek();
 var year = (new Date()).getWeekYear();
 var CATEGORY = 'Computer / Internet';
 var CITYCODE = '00033';  // for Miami;
+var TESTSTATE= 'FL';
 
 var jobs = [];
 for(var i = 0; i < topics.length; i++) {
-  var data = { week: year + '-' + week, city: CITYCODE, category: CATEGORY, jobtitle: topics[i].jobtitle, company: topics[i].company,
+  var data = { time: year + '-' + week, cityCode: CITYCODE, state: TESTSTATE, category: CATEGORY, jobtitle: topics[i].jobtitle, company: topics[i].company,
                url: topics[i].url, date: topics[i].date, snippet: topics[i].snippet, lat: topics[i].latitude, lng: topics[i].longitude };
   jobs[i] = data;
-
-  // var data = [                 // for testing;
-  //   { name : 'week', val : year + '-' + week },
-  //   { name : 'city', val : CITYCODE },
-  //   { name : 'category', val : CATEGORY },
-  //   { name : 'jobtitle', val : topics[i].jobtitle },
-  //   { name : 'company', val : topics[i].company },
-  //   { name : 'url', val : topics[i].url },
-  //   { name : 'date', val : topics[i].date },
-  //   { name : 'snippet', val : topics[i].snippet },
-  //   { name : 'lat', val : topics[i].latitude },
-  //   { name : 'long', val : topics[i].longitude }
-  // ];
 }
 
 module.exports = jobs;
 
-// jobs_list schema (10 fields): week, city, category, jobtitle, company, url, date, snippet, latitude, longitude
+// jobs_list schema (10 fields): week, city, category, jobtitle, company, url, date, snippet, lat, lng;
 // job_stats schema: month, city, category, jobCounts, medianSalary, loc_quotient (density);
 
 // initialize DB with 90 days of data; then search every again every Monday when week # changes;

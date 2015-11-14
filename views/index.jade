@@ -3,19 +3,19 @@ extends ./layouts/mainLayout
 include ./mixins/templater
 
 block content
-  h1(style="text-align: center;") Data for Miami, FL
+  h1(style="text-align: center;") Data for Miami, FL (00033)
 
   h2 Rental Stats
 
   ul(id="rental-stats")
-    +listGroupDetails(rentals)
+    +listDocuments(rentals)
 
   h2 Home Stats
 
   ul(id="home-stats")
-    +listGroupDetails(homes)
+    +listDocuments(homes)
 
   h2 Job Listings
 
   ul(id="job-listings")
-    +listUniqueData(jobs)
+    +listJobs(jobs)

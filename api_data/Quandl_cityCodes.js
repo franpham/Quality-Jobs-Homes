@@ -159,4 +159,4 @@ for (var i = 0; i < cities.length; i++) {
   codes[city] = cities[i][city];
 }
 
-module.exports = codes;
+module.exports = { cities: cities, codes: codes };

@@ -1,46 +1,28 @@
 
-//- for showing job listings and home listings;
-mixin listUniqueData(data)
-  each obj in data
-    - var item = obj[0].name + ' : ' + obj[0].val;
-    li= item
-    - var item = obj[1].name + ' : ' + obj[1].val;
-    li= item
-    - var item = obj[2].name + ' : ' + obj[2].val;
-    li= item
-    - var item = obj[3].name + ' : ' + obj[3].val;
-    li= item
-    - var item = obj[4].name + ' : ' + obj[4].val;
-    li= item
-    - var item = obj[5].name + ' : ' + obj[5].val;
-    li= item
-    - var item = obj[6].name ? obj[6].name + ' : ' + obj[6].val : 'Property: ';
-    if obj[6].name
-      li=item
-    else
-      li(class="property")= item
-        div
-          +listValues(obj[6].property)
-    - var item = obj[7].name ? obj[7].name + ' : ' + obj[7].val : 'Photos: ';
-    li= item
-      if obj[7].photos
-        div
-          +listValues(obj[7].photos)
-    br
+//- for listing array of key:val object literals;
+mixin listDetails(data)
+  -var values = Object.keys(data).reduce(function(prev, curr) { return (curr === 'time' || curr === 'cityCode') ? prev : (prev + ' - ' + curr + ' : ' + data[curr]); }, '');
+  div= values
 
-//- helper for listUniqueData;
-mixin listValues(list)
-  each item in list
-    div= item
+//- jobs_list schema (11 fields): time, cityCode, state, category, jobtitle, company, url, date, snippet, lat, lng;
+//- job_stats  schema (7 fields): time, cityCode, state, category, jobCounts, medianSalary, loc_quotient (density);
+//- rent_stats schema (7 fields): time, cityCode, state, rentCounts, medianPrice, rentRatio, usTraffic;
+//- home_stats schema (7 fields): time, cityCode, state, homeCounts, medianPrice, averagePrice, usTraffic;
 
-//- for listing rental data;
-mixin listGroupData(data)
+mixin listDocuments(data)
   each obj in data
-    - var item = obj.name + ' : ' + obj.val;
-    li= item
+    -var title = obj['time'] + ' : ' + obj['cityCode'];
+    li= title
+      +listDetails(obj)
 
-//- for listing home data;
-mixin listGroupDetails(data)
+mixin listJobs(data)
   each obj in data
-    -var values = Object.keys(obj).reduce(function(prev, curr) { return prev + ' - ' + curr + ' : ' + obj[curr] }, '');
-    li= values
+    -var title = obj['time'] + ' : ' + obj['cityCode'];
+    li= title
+    -var job = obj['category'] + ' : ' + obj['jobtitle'] + ' - ' + obj['company'];
+    li= job
+    -var info = obj['date'] + ' geolocation: ' + obj['lat'] + ' / ' + obj['lng'];
+    li= info
+    li
+      a(href="#{obj['url']}") Apply
+      div!= obj['snippet']

@@ -1,0 +1,40 @@
+
+//- for showing job listings and home listings;
+mixin listUniqueData(data)
+  each obj in data
+    - var item = obj[0].name + ' : ' + obj[0].val;
+    li= item
+    - var item = obj[1].name + ' : ' + obj[1].val;
+    li= item
+    - var item = obj[2].name + ' : ' + obj[2].val;
+    li= item
+    - var item = obj[3].name + ' : ' + obj[3].val;
+    li= item
+    - var item = obj[4].name + ' : ' + obj[4].val;
+    li= item
+    - var item = obj[5].name + ' : ' + obj[5].val;
+    li= item
+    - var item = obj[6].name ? obj[6].name + ' : ' + obj[6].val : 'Property: ';
+    if obj[6].name
+      li=item
+    else
+      li(class="property")= item
+        div
+          +listValues(obj[6].property)
+    - var item = obj[7].name ? obj[7].name + ' : ' + obj[7].val : 'Photos: ';
+    li= item
+      if obj[7].photos
+        div
+          +listValues(obj[7].photos)
+    br
+
+//- helper for listUniqueData;
+mixin listValues(list)
+  each item in list
+    div= item
+
+//- for listing rental data;
+mixin listGroupData(data)
+  each obj in data
+    - var item = obj.name + ' : ' + obj.val;
+    li= item
