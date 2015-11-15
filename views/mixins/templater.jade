@@ -1,7 +1,8 @@
 
 //- for listing array of key:val object literals;
 mixin listDetails(data)
-  -var values = Object.keys(data).reduce(function(prev, curr) { return (curr === 'time' || curr === 'cityCode') ? prev : (prev + ' - ' + curr + ' : ' + data[curr]); }, '');
+  -var fields = ['_id', 'time', 'state', 'cityCode'];
+  -var values = Object.keys(data).reduce(function(prev, curr) { return fields.indexOf(curr) >= 0 ? prev : (prev + ' - ' + curr + ' : ' + data[curr]); }, '');
   div= values
 
 //- jobs_list schema (11 fields): time, cityCode, state, category, jobtitle, company, url, date, snippet, lat, lng;
@@ -11,13 +12,13 @@ mixin listDetails(data)
 
 mixin listDocuments(data)
   each obj in data
-    -var title = obj['time'] + ' : ' + obj['cityCode'];
+    -var title = obj['time'];
     li= title
       +listDetails(obj)
 
 mixin listJobs(data)
   each obj in data
-    -var title = obj['time'] + ' : ' + obj['cityCode'];
+    -var title = obj['time'];
     li= title
     -var job = obj['category'] + ' : ' + obj['jobtitle'] + ' - ' + obj['company'];
     li= job

@@ -1,245 +1,142 @@
 "use strict";
 
-var topics = [
+var json = { "dataset": {
+"id": 19622452,
+"dataset_code": "C00033_RAH",
+"database_code": "ZILL",
+"name": "Zillow Home Value Index (Cities): Rentals All Homes - Miami, FL",
+"description": "",
+"refreshed_at": "2015-10-28T15:08:52.732Z",
+"newest_available_date": "2015-09-30",
+"oldest_available_date": "2010-11-30",
+"column_names": [
+  "Date",
+  "Value"
+],
+"frequency": "monthly",
+"type": "Time Series",
+"premium": false,
+"limit": null,
+"transform": null,
+"column_index": null,
+"start_date": "2013-09-01",
+"end_date": "2015-09-30",
+"data": [
+[
+"2015-09-30",
+2141
+],
 [
 "2015-08-31",
-2500
+2127
 ],
 [
 "2015-07-31",
-2450
+2108
 ],
 [
 "2015-06-30",
-2400
+2076
 ],
 [
 "2015-05-31",
-2350
+2045
 ],
 [
 "2015-04-30",
-2300
+2021
 ],
 [
 "2015-03-31",
-2200
+2010
 ],
 [
 "2015-02-28",
-2150
+2000
 ],
 [
 "2015-01-31",
-2000
+1997
 ],
 [
 "2014-12-31",
-2050
+1995
 ],
 [
 "2014-11-30",
-2100
+1995
 ],
 [
 "2014-10-31",
-2199
-],
-[
-"2014-09-30",
-2200
-],
-[
-"2014-08-31",
-2200
-],
-[
-"2014-07-31",
-2250
-],
-[
-"2014-06-30",
-2200
-],
-[
-"2014-05-31",
-2300
-],
-[
-"2014-04-30",
-2329
-],
-[
-"2014-03-31",
-2300
-],
-[
-"2014-02-28",
-2200
-],
-[
-"2014-01-31",
-2250
-],
-[
-"2013-12-31",
-2250
-],
-[
-"2013-11-30",
-2200
-],
-[
-"2013-10-31",
-2200
-],
-[
-"2013-09-30",
-2200
-],
-[
-"2013-08-31",
-2200
-],
-[
-"2013-07-31",
-2150
-],
-[
-"2013-06-30",
-2100
-],
-[
-"2013-05-31",
-2150
-],
-[
-"2013-04-30",
-2100
-],
-[
-"2013-03-31",
-2200
-],
-[
-"2013-02-28",
-2150
-],
-[
-"2013-01-31",
-2099
-],
-[
-"2012-12-31",
-2000
-],
-[
-"2012-11-30",
-2000
-],
-[
-"2012-10-31",
-2000
-],
-[
-"2012-09-30",
-2000
-],
-[
-"2012-08-31",
-2000
-],
-[
-"2012-07-31",
-2050
-],
-[
-"2012-06-30",
-2000
-],
-[
-"2012-05-31",
-1950
-],
-[
-"2012-04-30",
-1950
-],
-[
-"2012-03-31",
-2000
-],
-[
-"2012-02-29",
-2000
-],
-[
-"2012-01-31",
-2000
-],
-[
-"2011-12-31",
-2000
-],
-[
-"2011-11-30",
-2000
-],
-[
-"2011-10-31",
-1999
-],
-[
-"2011-09-30",
-1950
-],
-[
-"2011-08-31",
-1950
-],
-[
-"2011-07-31",
 1990
 ],
 [
-"2011-06-30",
-1950
+"2014-09-30",
+1982
 ],
 [
-"2011-05-31",
-1900
+"2014-08-31",
+1977
 ],
 [
-"2011-04-30",
-1850
+"2014-07-31",
+1970
 ],
 [
-"2011-03-31",
-1850
+"2014-06-30",
+1958
 ],
 [
-"2011-02-28",
-1850
+"2014-05-31",
+1954
 ],
 [
-"2011-01-31",
-1800
+"2014-04-30",
+1947
+],
+[
+"2014-03-31",
+1943
+],
+[
+"2014-02-28",
+1926
+],
+[
+"2014-01-31",
+1909
+],
+[
+"2013-12-31",
+1891
+],
+[
+"2013-11-30",
+1874
+],
+[
+"2013-10-31",
+1858
+],
+[
+"2013-09-30",
+1844
 ]
-];
+],
+"collapse": null,
+"order": "desc",
+"database_id": 13018
+}};
 
-// NEED TO SET LIMIT TO SAME AS home_data.js
-var url = 'http://www.quandl.com/api/v3/datasets/ZILL/C00033_RMP.json?limit=60';
-
-var priceObj = {};    // for use with DB;
-var prices = [];      // for listing values;
-for (var i = 0; i < topics.length; i++) {
-  var num = topics[i][0].substring(0, 7);
-  var val = topics[i][1];
-  prices[i] = { name: num, val: val };
+var items = json.dataset.data;
+var priceObj = {};
+for (var i = 0; i < items.length; i++) {
+  var num = items[i][0].substring(0, 7);
+  var val = items[i][1];
   priceObj[num] = val;
 }
-
 module.exports = priceObj;
 
-// http://www.quandl.com/api/v3/datasets/ZILL/C00033_RMP.json?limit=60
-// C00033 = city code for Miami, _RMP = median rent; https IS PREFERRED OVER http;
+// initialize the database with 2 yrs of data (-2 months), then search again every 1st Sat of month (-2 months) when month # changes; Quandl's data lags by 2 months;
+// http://www.quandl.com/api/v3/datasets/ZILL/C00033_RAH.json?start_date=2013-09-01&end_date=2015-09-30
+// C00033 = city code for Miami, _RAH = estimated median rent; https IS PREFERRED OVER http;

@@ -1,6 +1,31 @@
 "use strict";
 
-var topics = [
+var json = { "dataset": {
+"id": 20126132,
+"dataset_code": "C00033_PRR",
+"database_code": "ZILL",
+"name": "Zillow Home Value Index (Cities): Price-to-Rent Ratio - Miami, FL",
+"description": "",
+"refreshed_at": "2015-10-28T16:21:26.013Z",
+"newest_available_date": "2015-09-30",
+"oldest_available_date": "2010-10-31",
+"column_names": [
+  "Date",
+  "Value"
+],
+"frequency": "monthly",
+"type": "Time Series",
+"premium": false,
+"limit": null,
+"transform": null,
+"column_index": null,
+"start_date": "2013-09-01",
+"end_date": "2015-09-30",
+"data": [
+[
+"2015-09-30",
+11.32
+],
 [
 "2015-08-31",
 11.41
@@ -96,150 +121,22 @@ var topics = [
 [
 "2013-09-30",
 10.87
-],
-[
-"2013-08-31",
-10.9
-],
-[
-"2013-07-31",
-10.73
-],
-[
-"2013-06-30",
-10.69
-],
-[
-"2013-05-31",
-10.44
-],
-[
-"2013-04-30",
-10.22
-],
-[
-"2013-03-31",
-10.08
-],
-[
-"2013-02-28",
-10.06
-],
-[
-"2013-01-31",
-9.98
-],
-[
-"2012-12-31",
-9.82
-],
-[
-"2012-11-30",
-9.66
-],
-[
-"2012-10-31",
-9.61
-],
-[
-"2012-09-30",
-9.62
-],
-[
-"2012-08-31",
-9.45
-],
-[
-"2012-07-31",
-9.21
-],
-[
-"2012-06-30",
-9.07
-],
-[
-"2012-05-31",
-9.06
-],
-[
-"2012-04-30",
-8.88
-],
-[
-"2012-03-31",
-8.97
-],
-[
-"2012-02-29",
-8.81
-],
-[
-"2012-01-31",
-8.61
-],
-[
-"2011-12-31",
-8.52
-],
-[
-"2011-11-30",
-8.51
-],
-[
-"2011-10-31",
-8.59
-],
-[
-"2011-09-30",
-8.42
-],
-[
-"2011-08-31",
-8.43
-],
-[
-"2011-07-31",
-8.57
-],
-[
-"2011-06-30",
-8.7
-],
-[
-"2011-05-31",
-8.63
-],
-[
-"2011-04-30",
-8.66
-],
-[
-"2011-03-31",
-8.73
-],
-[
-"2011-02-28",
-8.81
-],
-[
-"2011-01-31",
-9.2
 ]
-];
+],
+"collapse": null,
+"order": "desc",
+"database_id": 13018
+}};
 
-// NEED TO SET LIMIT TO SAME AS home_data.js
-var url = 'http://www.quandl.com/api/v3/datasets/ZILL/C00033_PRR.json?limit=60';
-
-var ratioObj = {};    // for use with DB;
-var ratio = [];       // for listing values;
-for (var i = 0; i < topics.length; i++) {
-  var num = topics[i][0].substring(0, 7);
-  var val = topics[i][1];
-  ratio[i] = { name: num, val: val };
+var items = json.dataset.data;
+var ratioObj = {};
+for (var i = 0; i < items.length; i++) {
+  var num = items[i][0].substring(0, 7);
+  var val = items[i][1];
   ratioObj[num] = val;
 }
-
 module.exports = ratioObj;
 
-// http://www.quandl.com/api/v3/datasets/ZILL/C00033_PRR.json?limit=60
+// initialize the database with 2 yrs of data (-2 months), then search again every 1st Sat of month (-2 months) when month # changes; Quandl's data lags by 2 months;
+// http://www.quandl.com/api/v3/datasets/ZILL/C00033_PRR.json?start_date=2013-09-01&end_date=2015-09-30
 // C00033 = city code for Miami, _PRR = price-to-rent ratio; https IS PREFERRED OVER http;

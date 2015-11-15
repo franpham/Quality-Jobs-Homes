@@ -3,19 +3,22 @@ extends ./layouts/mainLayout
 include ./mixins/templater
 
 block content
-  h1(style="text-align: center;") Data for Miami, FL (00033)
-
-  h2 Rental Stats
+  -var area = 'Rental Stats: ' + rentals[0].cityCode + ', ' + rentals[0].state;
+  h2= area
 
   ul(id="rental-stats")
     +listDocuments(rentals)
 
-  h2 Home Stats
+  -var area = 'Home Stats: ' + homes[0].cityCode + ', ' + homes[0].state;
+  h2= area
 
   ul(id="home-stats")
     +listDocuments(homes)
 
-  h2 Job Listings
+  -var area = 'Job Listings: ' + jobs[0].cityCode + ', ' + jobs[0].state;
+  h2= area
 
   ul(id="job-listings")
     +listJobs(jobs)
+    li
+      a(href="#job-listings") link for next 25 jobs
